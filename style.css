@@ -1,23 +1,25 @@
 body {
     background-color: #00202A;
     z-index: 0;
-    height: 3000px;
+    height: 1500px;
     color: white;
 }
 
 .header {
-    background-color: #0C0C0D;
-    position: fixed;
+    background-color: #1C1C1C;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
     z-index: 100;
+    display: flex;
+    align-items: center;
 }
 
 .footer {
-    background-color: #0C0C0D;
-    position: fixed;
+    background-color: #1C1C1C;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -27,7 +29,7 @@ body {
 }
 
 .sidebar {
-    background-color: red;
+    background-color: #003344;
     position: relative;
     z-index: 1;
     width: 250px;
@@ -38,7 +40,7 @@ body {
 }
 
 .main-container {
-    background-color: blue;
+    background-color: #003344;
     position: relative;
     z-index: 1;
     width: calc(100% - 330px);
@@ -47,4 +49,128 @@ body {
     left: 50px;
     right: 30px;
     display: inline-block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+}
+
+.logo img:hover {
+    opacity: 0.9;
+    
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.nav-item {
+    color: #cfd8dc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #00202A;
+    color: white;
+}
+
+.sidebar h3 {
+    color: #00c2ff;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.league-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 10px;
+}
+
+.league-item {
+    display: block;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    color: #cfd8dc;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.league-item:hover {
+    background-color: #00202A;
+    color: white;
+}
+
+.main-container h2 {
+    color: #00c2ff;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.match-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #003344;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 10px;
+    transition: background 0.2s;
+}
+
+.match-card:hover {
+    background-color: #002836;
+}
+
+.league-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; 
+}
+
+.league-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.league-name {
+    color: #00c2ff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.match-info {
+    display: flex;
+    flex-direction: column;
+    color: #cfd8dc;
+}
+
+.match-date {
+    font-size: 14px;
+    color: #00c2ff;
+}
+
+.match-teams {
+    font-size: 16px;
+    font-weight: 500;
 }
