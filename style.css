@@ -1,70 +1,31 @@
-body {
-    background-color: #00202A;
-    z-index: 0;
-    height: 1500px;
-    color: white;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #00202A;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
 .header {
     background-color: #1C1C1C;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 150px;
-    z-index: 100;
+    height: 120px;
     display: flex;
     align-items: center;
-}
-
-.footer {
-    background-color: #1C1C1C;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 100;
-    
-}
-
-.sidebar {
-    background-color: #003344;
-    position: relative;
-    z-index: 1;
-    width: 250px;
-    height: 800px;
-    top: 150px;
-    left: 30px;
-    display: inline-block;
-}
-
-.main-container {
-    background-color: #003344;
-    position: relative;
-    z-index: 1;
-    width: calc(100% - 330px);
-    height: 800px;
-    top: 150px;
-    left: 50px;
-    right: 30px;
-    display: inline-block;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
 }
 
 .logo img {
-    height: 150px;
-    width: auto;
+    height: 200px;
+    margin-left: 30px;
 }
 
-.logo img:hover {
-    opacity: 0.9;
-    
+.logo {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
 }
 
 .nav {
@@ -77,100 +38,141 @@ body {
     color: #cfd8dc;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
 }
 
 .nav-item:hover {
-    background-color: #00202A;
     color: white;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    background-color: #003344;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .sidebar h3 {
     color: #00c2ff;
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .league-list {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 10px;
+    margin: 0;
 }
 
 .league-item {
     display: block;
     padding: 8px 12px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #cfd8dc;
     text-decoration: none;
     border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
 }
 
 .league-item:hover {
-    background-color: #00202A;
+    background-color: #002836;
     color: white;
+}
+
+/* MAIN */
+.main-container {
+    flex: 1;
+    background-color: #003344;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .main-container h2 {
     color: #00c2ff;
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 22px;
+    margin-bottom: 20px;
 }
 
-.match-card {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: #003344;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin: 10px;
-    transition: background 0.2s;
-}
-
-.match-card:hover {
-    background-color: #002836;
-}
-
-.league-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 120px; 
-}
-
-.league-logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    border-radius: 4px;
-    margin-bottom: 5px;
-}
-
-.league-name {
+/* LEAGUE */
+.league-title {
     color: #00c2ff;
-    font-size: 14px;
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-align: center;
 }
 
-.match-info {
+.match-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* natiahne kartu po celej šírke main containeru */
+    margin: 0 0 10px 0;
+    padding: 12px 15px;
+    background-color: #002836;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.match-row:hover {
+    background-color: #003344;
+}
+
+.match-time {
+    color: #00c2ff;
+    text-align: center;
+    width: 80px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
+.teams {
     display: flex;
     flex-direction: column;
+    flex: 1;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* medzera medzi logom a názvom */
+}
+
+.team-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 50%; /* kruhové logo, môžeš zmeniť podľa potreby */
+}
+
+.team {
     color: #cfd8dc;
-}
-
-.match-date {
-    font-size: 14px;
-    color: #00c2ff;
-}
-
-.match-teams {
-    font-size: 16px;
     font-weight: 500;
+}
+
+.score {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1C1C1C;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }

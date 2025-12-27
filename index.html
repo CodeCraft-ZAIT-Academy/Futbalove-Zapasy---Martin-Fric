@@ -3,68 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futbalové zápasy svetových líg</title>
+    <title>LiveArena – Futbalové zápasy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="/" class="logo">
-            <img src="Obrázky/Logo2.png" alt="LiveArena logo">
-        </a>
 
-        <nav class="nav">
-            <a href="#" class="nav-item">Futbal</a>
-            <a href="#" class="nav-item">Tabuľky</a>
-            <a href="#" class="nav-item">Kontakt</a>
-        </nav>
-    </header>
-    <footer class="footer"></footer>
-    <div class="sidebar">
+<header class="header">
+    <a  class="logo">
+        <img src="Obrázky/Logo2.png" alt="LiveArena logo">
+    </a>
+
+    <nav class="nav">
+        <a href="#" class="nav-item">Futbal</a>
+        <a href="#" class="nav-item">Tabuľky</a>
+        <a href="#" class="nav-item">Kontakt</a>
+    </nav>
+</header>
+
+<div class="content">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
         <h3>Ligy</h3>
-    <ul class="league-list">
-        <li><a href="#" class="league-item">Premier League</a></li>
-        <li><a href="#" class="league-item">La Liga</a></li>
-        <li><a href="#" class="league-item">Bundesliga</a></li>
-        <li><a href="#" class="league-item">Ligue 1</a></li>
-        <li><a href="#" class="league-item">Serie A</a></li>
-    </ul>
-    </div>
-    <div class="main-container">
+        <ul class="league-list">
+            <li><a href="#" class="league-item" data-league="all">Všetky</a></li>
+            <li><a href="#" class="league-item" data-league="premier">Premier League</a></li>
+            <li><a href="#" class="league-item" data-league="laliga">La Liga</a></li>
+            <li><a href="#" class="league-item" data-league="bundesliga">Bundesliga</a></li>
+            <li><a href="#" class="league-item" data-league="ligue1">Ligue 1</a></li>
+            <li><a href="#" class="league-item" data-league="seriea">Serie A</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-container">
         <h2>Program a výsledky zápasov</h2>
 
-    <div class="match-card">
-        <div class="league-info">
-            <img src="Obrázky/Premier League.png" alt="Premier League" class="league-logo">
-            <span class="league-name">Premier League</span>
+        <!-- PREMIER LEAGUE -->
+         <section class="league-section" data-league="premier">
+    <h3 class="league-title">Premier League</h3>
+        <div class="match-row">
+    <div class="match-time">
+        27.12.<br>21:00
+    </div>
+    <div class="teams">
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                <span class="team">Liverpool</span>
+            </div>
+            <span class="score">2</span>
         </div>
-        <div class="match-info">
-            <span class="match-date">18.12.2025 15:00</span>
-            <span class="match-teams">Manchester United <strong>2</strong> - <strong>1</strong> Chelsea</span>
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
+                <span class="team">Man United</span>
+            </div>
+            <span class="score">1</span>
         </div>
     </div>
+</div>
+        </section>
 
-    <div class="match-card">
-        <div class="league-info">
-            <img src="Obrázky/LaLiga.png" alt="La Liga" class="league-logo">
-            <span class="league-name">La Liga</span>
+        <!-- LA LIGA -->
+         <section class="league-section" data-league="laliga">
+    <h3 class="league-title">La Liga</h3>
+        <div class="match-row">
+    <div class="match-time">
+        27.12.<br>18:00
+    </div>
+    <div class="teams">
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Real Madrid.png" alt="Real Madrid" class="team-logo">
+                <span class="team">Real Madrid</span>
+            </div>
+            <span class="score">1</span>
         </div>
-        <div class="match-info">
-            <span class="match-date">18.12.2025 18:00</span>
-            <span class="match-teams">Real Madrid <strong>1</strong> - <strong>1</strong> Barcelona</span>
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Barcelona.png" alt="Barcelona" class="team-logo">
+                <span class="team">Barcelona</span>
+            </div>
+            <span class="score">1</span>
         </div>
     </div>
+</div>
 
-    <div class="match-card">
-        <div class="league-info">
-            <img src="Obrázky/Bundesliga.png" alt="Bundesliga" class="league-logo">
-            <span class="league-name">Bundesliga</span>
+        <div class="match-row">
+    <div class="match-time">
+        27.12.<br>18:00
+    </div>
+    <div class="teams">
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Betis.png" alt="Betis" class="team-logo">
+                <span class="team">Betis</span>
+            </div>
+            <span class="score">1</span>
         </div>
-        <div class="match-info">
-            <span class="match-date">18.12.2025 20:00</span>
-            <span class="match-teams">Bayern <strong>3</strong> - <strong>0</strong> Dortmund</span>
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Sevilla.png" alt="Sevilla" class="team-logo">
+                <span class="team">Sevilla</span>
+            </div>
+            <span class="score">4</span>
         </div>
     </div>
+</div>
+        </section>
+
+        <!-- BUNDESLIGA -->
+         <section class="league-section" data-league="bundesliga">
+    <h3 class="league-title">Bundesliga</h3>
+         <div class="match-row">
+    <div class="match-time">
+        27.12.<br>17:00
     </div>
-    
+    <div class="teams">
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Bayern.png" alt="Bayern" class="team-logo">
+                <span class="team">Bayern</span>
+            </div>
+            <span class="score">4</span>
+        </div>
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Dortmund.png" alt="Dortmund" class="team-logo">
+                <span class="team">Dortmund</span>
+            </div>
+            <span class="score">2</span>
+        </div>
+    </div>
+</div>
+        </section>
+        
+
+        <!-- LIGUE 1 -->
+         <section class="league-section" data-league="ligue1">
+    <h3 class="league-title">Ligue 1</h3>
+        <div class="match-row">
+    <div class="match-time">
+        27.12.<br>16:00
+    </div>
+    <div class="teams">
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/PSG.png" alt="PSG" class="team-logo">
+                <span class="team">PSG</span>
+            </div>
+            <span class="score">5</span>
+        </div>
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Marseille.png" alt="Marseille" class="team-logo">
+                <span class="team">Marseille</span>
+            </div>
+            <span class="score">1</span>
+        </div>
+    </div>
+</div>
+        </section>
+
+        <!-- SERIE A -->
+         <section class="league-section" data-league="seriea">
+    <h3 class="league-title">Serie A</h3>
+        <div class="match-row">
+    <div class="match-time">
+        27.12.<br>20:00
+    </div>
+    <div class="teams">
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Juventus.png" alt="Juventus" class="team-logo">
+                <span class="team">Juventus</span>
+            </div>
+            <span class="score">2</span>
+        </div>
+        <div class="team-row">
+            <div class="team-info">
+                <img src="Obrázky/Inter.png" alt="Inter" class="team-logo">
+                <span class="team">Inter</span>
+            </div>
+            <span class="score">0</span>
+        </div>
+    </div>
+</div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="footer">
+    © LiveArena
+</footer>
+
+<script src="filter.js"></script>
 </body>
 </html>
