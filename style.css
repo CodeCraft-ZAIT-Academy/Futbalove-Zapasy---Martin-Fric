@@ -71,12 +71,25 @@ body {
 }
 
 .league-item {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* medzera medzi vlajkou a textom */
     padding: 8px 12px;
     margin-bottom: 6px;
     color: #cfd8dc;
     text-decoration: none;
     border-radius: 6px;
+}
+
+.league-name {
+    white-space: nowrap;
+}
+
+.league-flag {
+    width: 18px;
+    height: 12px;
+    object-fit: cover;
+    border-radius: 2px;
 }
 
 .league-item:hover {
