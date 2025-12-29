@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveArena – Futbalové zápasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo">
+            <img src="Obrázky/Logo2.png" alt="LiveArena logo">
+        </a>
+
+        <nav class="nav">
+            <a href="index.html" class="nav-item">Futbal</a>
+            <a href="tables.html" class="nav-item active">Tabuľky</a>
+            <a href="contact.html" class="nav-item">Kontakt</a>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h3>Ligy</h3>
+            <ul class="league-list">
+                <li>
+                    <a href="#" class="league-item" data-league="all">
+                        <span class="league-name">Všetky</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="league-item" data-league="premier">
+                        <img src="Obrázky/Anglicko.png" class="league-flag">
+                        <span class="league-name">Premier League</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="league-item" data-league="laliga">
+                        <img src="Obrázky/Španielsko.png" class="league-flag">
+                        <span class="league-name">La Liga</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="league-item" data-league="bundesliga">
+                        <img src="Obrázky/Nemecko.png" class="league-flag">
+                        <span class="league-name">Bundesliga</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="league-item" data-league="ligue1">
+                        <img src="Obrázky/Francúzsko.png" class="league-flag">
+                        <span class="league-name">Ligue 1</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="league-item" data-league="seriea">
+                        <img src="Obrázky/Taliansko.png" class="league-flag">
+                        <span class="league-name">Serie A</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-container">
+            <h2>Program a výsledky zápasov</h2>
+
+            <section class="league-section" data-league="premier">
+                <h3 class="league-title">Tabuľka Premier League</h3>
+
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tím</th>
+                            <th>Z</th>
+                            <th>V</th>
+                            <th>R</th>
+                            <th>P</th>
+                            <th>B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span>Liverpool</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
+                                    <span>Man United</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>42</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="league-section" data-league="laliga">
+                <h3 class="league-title">Tabuľka La Liga</h3>
+
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tím</th>
+                            <th>Z</th>
+                            <th>V</th>
+                            <th>R</th>
+                            <th>P</th>
+                            <th>B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Real Madrid.png" alt="Real Madrid" class="team-logo">
+                                    <span>Real Madrid</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Barcelona.png" alt="Barcelona" class="team-logo">
+                                    <span>Barcelona</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>42</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="league-section" data-league="bundesliga">
+                <h3 class="league-title">Tabuľka Bundesliga</h3>
+
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tím</th>
+                            <th>Z</th>
+                            <th>V</th>
+                            <th>R</th>
+                            <th>P</th>
+                            <th>B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Bayern.png" alt="Bayern" class="team-logo">
+                                    <span>Bayern</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Dortmund.png" alt="Dortmund" class="team-logo">
+                                    <span>Dortmund</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>42</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="league-section" data-league="ligue1">
+                <h3 class="league-title">Tabuľka Ligue 1</h3>
+
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tím</th>
+                            <th>Z</th>
+                            <th>V</th>
+                            <th>R</th>
+                            <th>P</th>
+                            <th>B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/PSG.png" alt="PSG" class="team-logo">
+                                    <span>PSG</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Marseille.png" alt="Marseille" class="team-logo">
+                                    <span>Marseille</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>42</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="league-section" data-league="seriea">
+                <h3 class="league-title">Tabuľka Serie A</h3>
+
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tím</th>
+                            <th>Z</th>
+                            <th>V</th>
+                            <th>R</th>
+                            <th>P</th>
+                            <th>B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Juventus.png" alt="Juventus" class="team-logo">
+                                    <span>Juventus</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="team-name">
+                                <div class="team-info">
+                                    <img src="Obrázky/Inter.png" alt="Inter" class="team-logo">
+                                    <span>Inter</span>
+                                </div>
+                            </td>
+                            <td>18</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>42</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        © LiveArena
+    </footer>
+
+    <script src="filter.js"></script>
+</body>
+
+</html>
