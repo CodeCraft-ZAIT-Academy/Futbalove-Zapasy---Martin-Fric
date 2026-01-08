@@ -251,6 +251,64 @@ body {
     font-weight: bold;
 }
 
+.league-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.league-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.league-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: #002836;
+    color: #cfd8dc;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background-color: #00c2ff;
+    color: #00202A;
+}
+
+.tab-content .tab-panel {
+    display: none;
+}
+
+.tab-content .tab-panel.active {
+    display: block;
+}
+
+.match-round {
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #002836;
+    padding: 10px;
+}
+
+.match-round h5 {
+    color: #00c2ff;
+    margin-bottom: 8px;
+}
+
+
+
 .footer {
     background-color: #1C1C1C;
     height: 70px;

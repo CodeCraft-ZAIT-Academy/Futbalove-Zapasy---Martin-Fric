@@ -74,157 +74,441 @@
         <h2>Program a výsledky zápasov</h2>
 
         <!-- PREMIER LEAGUE -->
-         <section class="league-section" data-league="premier">
-    <h3 class="league-title">Premier League</h3>
-        <div class="match-row">
-    <div class="match-time">
-        27.12.<br>21:00
-    </div>
-    <div class="teams">
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
-                <span class="team">Liverpool</span>
+        <section class="league-section" data-league="premier">
+            <div class="league-header">
+              <img src="Obrázky/Premier League.png" alt="Premier League Logo" class="league-logo">
+              <h3 class="league-title">Premier League</h3>
             </div>
-            <span class="score">2</span>
-        </div>
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
-                <span class="team">Man United</span>
+          
+            <div class="league-tabs">
+              <button class="tab-btn active" data-tab="overview">Prehľad</button>
+              <button class="tab-btn" data-tab="schedule">Program</button>
+              <button class="tab-btn" data-tab="results">Výsledky</button>
+              <button class="tab-btn" data-tab="table">Tabuľky</button>
             </div>
-            <span class="score">1</span>
-        </div>
-    </div>
-</div>
-        </section>
+          
+            <div class="tab-content">
+              <!-- PREHĽAD KOLO -->
+              <div class="tab-panel" data-tab="overview">
+                <h4>Najbližšie kolo: 20. kolo</h4>
+                <p>Popis: Liverpool, Man United a ďalšie tímy nastúpia v rámci 20. kola Premier League.</p>
+              </div>
+          
+              <!-- PROGRAM -->
+              <div class="tab-panel" data-tab="schedule">
+                <div class="match-round" data-round="20">
+                  <h5>20. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">27.12. 21:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info">
+                          <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                          <span class="team">Liverpool</span>
+                        </div>
+                        <span class="score">-</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info">
+                          <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
+                          <span class="team">Man United</span>
+                        </div>
+                        <span class="score">-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- VÝSLEDKY -->
+              <div class="tab-panel" data-tab="results">
+                <div class="match-round" data-round="19">
+                  <h5>19. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">20.12. 18:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info">
+                          <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                          <span class="team">Liverpool</span>
+                        </div>
+                        <span class="score">2</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info">
+                          <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
+                          <span class="team">Man United</span>
+                        </div>
+                        <span class="score">1</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- TABUĽKA -->
+              <div class="tab-panel" data-tab="table">
+                <table class="league-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Tím</th>
+                      <th>Z</th>
+                      <th>V</th>
+                      <th>R</th>
+                      <th>P</th>
+                      <th>B</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td class="team-name">
+                        <div class="team-info">
+                          <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                          <span>Liverpool</span>
+                        </div>
+                      </td>
+                      <td>18</td>
+                      <td>14</td>
+                      <td>3</td>
+                      <td>1</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td class="team-name">
+                        <div class="team-info">
+                          <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
+                          <span>Man United</span>
+                        </div>
+                      </td>
+                      <td>18</td>
+                      <td>13</td>
+                      <td>3</td>
+                      <td>2</td>
+                      <td>42</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
 
         <!-- LA LIGA -->
-         <section class="league-section" data-league="laliga">
-    <h3 class="league-title">La Liga</h3>
-        <div class="match-row">
-    <div class="match-time">
-        27.12.<br>18:00
+<section class="league-section" data-league="laliga">
+    <div class="league-header">
+      <img src="Obrázky/La Liga.png" alt="La Liga Logo" class="league-logo">
+      <h3 class="league-title">La Liga</h3>
     </div>
-    <div class="teams">
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Real Madrid.png" alt="Real Madrid" class="team-logo">
-                <span class="team">Real Madrid</span>
-            </div>
-            <span class="score">1</span>
-        </div>
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Barcelona.png" alt="Barcelona" class="team-logo">
-                <span class="team">Barcelona</span>
-            </div>
-            <span class="score">1</span>
-        </div>
+    <div class="league-tabs">
+      <button class="tab-btn active" data-tab="overview">Prehľad</button>
+      <button class="tab-btn" data-tab="schedule">Program</button>
+      <button class="tab-btn" data-tab="results">Výsledky</button>
+      <button class="tab-btn" data-tab="table">Tabuľky</button>
     </div>
-</div>
-
-        <div class="match-row">
-    <div class="match-time">
-        27.12.<br>18:00
-    </div>
-    <div class="teams">
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Betis.png" alt="Betis" class="team-logo">
-                <span class="team">Betis</span>
+    <div class="tab-content">
+      <div class="tab-panel" data-tab="overview">
+        <h4>Najbližšie kolo: 18. kolo</h4>
+        <p>Popis: Real Madrid, Barcelona a ďalšie tímy nastúpia v rámci 18. kola La Ligy.</p>
+      </div>
+      <div class="tab-panel" data-tab="schedule">
+        <div class="match-round" data-round="18">
+          <h5>18. kolo</h5>
+          <div class="match-row">
+            <div class="match-time">27.12. 18:00</div>
+            <div class="teams">
+              <div class="team-row">
+                <div class="team-info">
+                  <img src="Obrázky/Real Madrid.png" alt="Real Madrid" class="team-logo">
+                  <span class="team">Real Madrid</span>
+                </div>
+                <span class="score">-</span>
+              </div>
+              <div class="team-row">
+                <div class="team-info">
+                  <img src="Obrázky/Barcelona.png" alt="Barcelona" class="team-logo">
+                  <span class="team">Barcelona</span>
+                </div>
+                <span class="score">-</span>
+              </div>
             </div>
-            <span class="score">1</span>
+          </div>
         </div>
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Sevilla.png" alt="Sevilla" class="team-logo">
-                <span class="team">Sevilla</span>
+      </div>
+      <div class="tab-panel" data-tab="results">
+        <div class="match-round" data-round="17">
+          <h5>17. kolo</h5>
+          <div class="match-row">
+            <div class="match-time">20.12. 20:00</div>
+            <div class="teams">
+              <div class="team-row">
+                <div class="team-info">
+                  <img src="Obrázky/Real Madrid.png" alt="Real Madrid" class="team-logo">
+                  <span class="team">Real Madrid</span>
+                </div>
+                <span class="score">1</span>
+              </div>
+              <div class="team-row">
+                <div class="team-info">
+                  <img src="Obrázky/Barcelona.png" alt="Barcelona" class="team-logo">
+                  <span class="team">Barcelona</span>
+                </div>
+                <span class="score">1</span>
+              </div>
             </div>
-            <span class="score">4</span>
+          </div>
         </div>
+      </div>
+      <div class="tab-panel" data-tab="table">
+        <table class="league-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Tím</th>
+              <th>Z</th>
+              <th>V</th>
+              <th>R</th>
+              <th>P</th>
+              <th>B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="team-name">
+                <div class="team-info">
+                  <img src="Obrázky/Real Madrid.png" alt="Real Madrid" class="team-logo">
+                  <span>Real Madrid</span>
+                </div>
+              </td>
+              <td>18</td>
+              <td>14</td>
+              <td>3</td>
+              <td>1</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="team-name">
+                <div class="team-info">
+                  <img src="Obrázky/Barcelona.png" alt="Barcelona" class="team-logo">
+                  <span>Barcelona</span>
+                </div>
+              </td>
+              <td>18</td>
+              <td>13</td>
+              <td>3</td>
+              <td>2</td>
+              <td>42</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-</div>
-        </section>
+  </section>
 
         <!-- BUNDESLIGA -->
-         <section class="league-section" data-league="bundesliga">
-    <h3 class="league-title">Bundesliga</h3>
-         <div class="match-row">
-    <div class="match-time">
-        27.12.<br>17:00
-    </div>
-    <div class="teams">
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Bayern.png" alt="Bayern" class="team-logo">
-                <span class="team">Bayern</span>
+        <section class="league-section" data-league="bundesliga">
+            <div class="league-header">
+              <img src="Obrázky/Bundesliga.png" alt="Bundesliga Logo" class="league-logo">
+              <h3 class="league-title">Bundesliga</h3>
             </div>
-            <span class="score">4</span>
-        </div>
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Dortmund.png" alt="Dortmund" class="team-logo">
-                <span class="team">Dortmund</span>
+            <div class="league-tabs">
+              <button class="tab-btn active" data-tab="overview">Prehľad</button>
+              <button class="tab-btn" data-tab="schedule">Program</button>
+              <button class="tab-btn" data-tab="results">Výsledky</button>
+              <button class="tab-btn" data-tab="table">Tabuľky</button>
             </div>
-            <span class="score">2</span>
-        </div>
-    </div>
-</div>
-        </section>
+            <div class="tab-content">
+              <div class="tab-panel" data-tab="overview">
+                <h4>Najbližšie kolo: 18. kolo</h4>
+                <p>Popis: Bayern, Dortmund a ďalšie tímy nastúpia v rámci 18. kola Bundesligy.</p>
+              </div>
+              <div class="tab-panel" data-tab="schedule">
+                <div class="match-round" data-round="18">
+                  <h5>18. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">27.12. 17:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Bayern.png" alt="Bayern" class="team-logo"><span class="team">Bayern</span></div>
+                        <span class="score">-</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Dortmund.png" alt="Dortmund" class="team-logo"><span class="team">Dortmund</span></div>
+                        <span class="score">-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-panel" data-tab="results">
+                <div class="match-round" data-round="17">
+                  <h5>17. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">20.12. 17:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Bayern.png" alt="Bayern" class="team-logo"><span class="team">Bayern</span></div>
+                        <span class="score">4</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Dortmund.png" alt="Dortmund" class="team-logo"><span class="team">Dortmund</span></div>
+                        <span class="score">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-panel" data-tab="table">
+                <table class="league-table">
+                  <thead>
+                    <tr><th>#</th><th>Tím</th><th>Z</th><th>V</th><th>R</th><th>P</th><th>B</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1</td><td class="team-name"><div class="team-info"><img src="Obrázky/Bayern.png" class="team-logo"><span>Bayern</span></div></td><td>18</td><td>14</td><td>3</td><td>1</td><td>45</td></tr>
+                    <tr><td>2</td><td class="team-name"><div class="team-info"><img src="Obrázky/Dortmund.png" class="team-logo"><span>Dortmund</span></div></td><td>18</td><td>13</td><td>3</td><td>2</td><td>42</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
         
 
         <!-- LIGUE 1 -->
-         <section class="league-section" data-league="ligue1">
-    <h3 class="league-title">Ligue 1</h3>
-        <div class="match-row">
-    <div class="match-time">
-        27.12.<br>16:00
-    </div>
-    <div class="teams">
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/PSG.png" alt="PSG" class="team-logo">
-                <span class="team">PSG</span>
+        <section class="league-section" data-league="ligue1">
+            <div class="league-header">
+              <img src="Obrázky/Ligue 1.png" alt="Ligue 1 Logo" class="league-logo">
+              <h3 class="league-title">Ligue 1</h3>
             </div>
-            <span class="score">5</span>
-        </div>
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Marseille.png" alt="Marseille" class="team-logo">
-                <span class="team">Marseille</span>
+            <div class="league-tabs">
+              <button class="tab-btn active" data-tab="overview">Prehľad</button>
+              <button class="tab-btn" data-tab="schedule">Program</button>
+              <button class="tab-btn" data-tab="results">Výsledky</button>
+              <button class="tab-btn" data-tab="table" onclick="window.location.href='tables.html#ligue1'">Tabuľka</button>
             </div>
-            <span class="score">1</span>
-        </div>
-    </div>
-</div>
-        </section>
+            <div class="tab-content">
+              <div class="tab-panel" data-tab="overview">
+                <h4>Najbližšie kolo: 18. kolo</h4>
+                <p>Popis: PSG, Marseille a ďalšie tímy nastúpia v rámci 18. kola Ligue 1.</p>
+              </div>
+              <div class="tab-panel" data-tab="schedule">
+                <div class="match-round" data-round="18">
+                  <h5>18. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">27.12. 16:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/PSG.png" class="team-logo"><span class="team">PSG</span></div>
+                        <span class="score">-</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Marseille.png" class="team-logo"><span class="team">Marseille</span></div>
+                        <span class="score">-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-panel" data-tab="results">
+                <div class="match-round" data-round="17">
+                  <h5>17. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">20.12. 16:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/PSG.png" class="team-logo"><span class="team">PSG</span></div>
+                        <span class="score">5</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Marseille.png" class="team-logo"><span class="team">Marseille</span></div>
+                        <span class="score">1</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-panel" data-tab="table">
+                <table class="league-table">
+                  <thead>
+                    <tr><th>#</th><th>Tím</th><th>Z</th><th>V</th><th>R</th><th>P</th><th>B</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1</td><td class="team-name"><div class="team-info"><img src="Obrázky/PSG.png" class="team-logo"><span>PSG</span></div></td><td>18</td><td>14</td><td>3</td><td>1</td><td>45</td></tr>
+                    <tr><td>2</td><td class="team-name"><div class="team-info"><img src="Obrázky/Marseille.png" class="team-logo"><span>Marseille</span></div></td><td>18</td><td>13</td><td>3</td><td>2</td><td>42</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
 
         <!-- SERIE A -->
-         <section class="league-section" data-league="seriea">
-    <h3 class="league-title">Serie A</h3>
-        <div class="match-row">
-    <div class="match-time">
-        27.12.<br>20:00
-    </div>
-    <div class="teams">
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Juventus.png" alt="Juventus" class="team-logo">
-                <span class="team">Juventus</span>
+        <section class="league-section" data-league="seriea">
+            <div class="league-header">
+              <img src="Obrázky/Seria A.png" alt="Serie A Logo" class="league-logo">
+              <h3 class="league-title">Serie A</h3>
             </div>
-            <span class="score">2</span>
-        </div>
-        <div class="team-row">
-            <div class="team-info">
-                <img src="Obrázky/Inter.png" alt="Inter" class="team-logo">
-                <span class="team">Inter</span>
+            <div class="league-tabs">
+              <button class="tab-btn active" data-tab="overview">Prehľad</button>
+              <button class="tab-btn" data-tab="schedule">Program</button>
+              <button class="tab-btn" data-tab="results">Výsledky</button>
+              <button class="tab-btn" data-tab="table">Tabuľky</button>
             </div>
-            <span class="score">0</span>
-        </div>
-    </div>
-</div>
-        </section>
+            <div class="tab-content">
+              <div class="tab-panel" data-tab="overview">
+                <h4>Najbližšie kolo: 20. kolo</h4>
+                <p>Popis: Juventus, Inter a ďalšie tímy nastúpia v rámci 20. kola Serie A.</p>
+              </div>
+              <div class="tab-panel" data-tab="schedule">
+                <div class="match-round" data-round="20">
+                  <h5>20. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">27.12. 20:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Juventus.png" class="team-logo"><span class="team">Juventus</span></div>
+                        <span class="score">-</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Inter.png" class="team-logo"><span class="team">Inter</span></div>
+                        <span class="score">-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-panel" data-tab="results">
+                <div class="match-round" data-round="19">
+                  <h5>19. kolo</h5>
+                  <div class="match-row">
+                    <div class="match-time">20.12. 20:00</div>
+                    <div class="teams">
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Juventus.png" class="team-logo"><span class="team">Juventus</span></div>
+                        <span class="score">2</span>
+                      </div>
+                      <div class="team-row">
+                        <div class="team-info"><img src="Obrázky/Inter.png" class="team-logo"><span class="team">Inter</span></div>
+                        <span class="score">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-panel" data-tab="table">
+                <table class="league-table">
+                  <thead>
+                    <tr><th>#</th><th>Tím</th><th>Z</th><th>V</th><th>R</th><th>P</th><th>B</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1</td><td class="team-name"><div class="team-info"><img src="Obrázky/Juventus.png" class="team-logo"><span>Juventus</span></div></td><td>20</td><td>15</td><td>3</td><td>2</td><td>48</td></tr>
+                    <tr><td>2</td><td class="team-name"><div class="team-info"><img src="Obrázky/Inter.png" class="team-logo"><span>Inter</span></div></td><td>20</td><td>14</td><td>4</td><td>2</td><td>46</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
 
     </main>
 </div>
