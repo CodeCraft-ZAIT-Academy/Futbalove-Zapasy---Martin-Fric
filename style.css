@@ -17,7 +17,7 @@ body {
 }
 
 .logo img {
-    height: 200px;
+    height: 250px;
     margin-left: 30px;
 }
 
@@ -87,7 +87,7 @@ body {
 .league-item {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     padding: 8px 12px;
     margin-bottom: 6px;
     color: #cfd8dc;
@@ -173,7 +173,8 @@ body {
 
 .league-table th:nth-child(1),
 .league-table td:nth-child(1) {
-    width: 30px; /* # */
+    width: 30px;
+    /* # */
 }
 
 .league-table th:nth-child(2),
@@ -187,14 +188,15 @@ body {
 
 .league-table th:nth-child(n+3),
 .league-table td:nth-child(n+3) {
-    width: 50px; /* Z, V, R, P, B */
+    width: 50px;
+    /* Z, V, R, P, B */
 }
 
 .match-row {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 100%; 
+    width: 100%;
     margin: 0 0 10px 0;
     padding: 12px 15px;
     background-color: #002836;
@@ -228,17 +230,17 @@ body {
     padding: 4px 0;
 }
 
-.team-info  {
+.team-info {
     display: flex;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
 }
 
 .team-logo {
     width: 24px;
     height: 24px;
     object-fit: contain;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .team {
@@ -282,7 +284,8 @@ body {
     transition: background-color 0.2s;
 }
 
-.tab-btn.active, .tab-btn:hover {
+.tab-btn.active,
+.tab-btn:hover {
     background-color: #00c2ff;
     color: #00202A;
 }
@@ -307,6 +310,133 @@ body {
     margin-bottom: 8px;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.match-row {
+    cursor: pointer;
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #1e1e2f;
+    border-radius: 15px;
+    padding: 25px 30px;
+    width: 90%;
+    max-width: 650px;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #00c2ff;
+}
+
+.modal-close:hover {
+    color: #ff5555;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.league-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.league-logo-small {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.round-info {
+    font-size: 0.9rem;
+    color: #cfd8dc;
+    margin-right: 30px;
+}
+
+.match-date {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #cfd8dc;
+    margin-bottom: 15px;
+}
+
+.modal-teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-bg-white {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.team-logo-large {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.vs {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.match-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.match-details .icon {
+    margin-right: 5px;
 }
 
 .footer {

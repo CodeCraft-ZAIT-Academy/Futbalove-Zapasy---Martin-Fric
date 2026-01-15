@@ -11,7 +11,7 @@
 <body>
 
   <header class="header">
-    <a class="logo">
+    <a href="index.html" class="logo">
       <img src="Obrázky/Logo2.png" alt="LiveArena logo">
     </a>
 
@@ -89,9 +89,9 @@
           <h3 class="league-title">Premier League</h3>
         </div>
 
-       
+
         <div class="tab-content">
-          <!-- PREHĽAD KOLO -->
+          <!-- PREHĽAD KOLA -->
           <div class="tab-panel" data-tab="overview">
             <h4>Najbližšie kolo: 20. kolo</h4>
             <p>Popis: Liverpool, Man United a ďalšie tímy nastúpia v rámci 20. kola Premier League.</p>
@@ -101,7 +101,9 @@
           <div class="tab-panel" data-tab="schedule">
             <div class="match-round" data-round="20">
               <h5>20. kolo</h5>
-              <div class="match-row">
+              <div class="match-row" data-home="Liverpool" data-away="Man United" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                data-round="20. kolo" data-date="27.12.2026 18:00" data-stadium="Anfield" data-city="Liverpool"
+                data-capacity="53394">
                 <div class="match-time">27.12. 21:00</div>
                 <div class="teams">
                   <div class="team-row">
@@ -121,55 +123,6 @@
                 </div>
               </div>
             </div>
-
-            <div class="match-round" data-round="21">
-              <h5>21. kolo</h5>
-              <div class="match-row">
-                <div class="match-time">27.12. 21:00</div>
-                <div class="teams">
-                  <div class="team-row">
-                    <div class="team-info">
-                      <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
-                      <span class="team">Liverpool</span>
-                    </div>
-                    <span class="score">-</span>
-                  </div>
-                  <div class="team-row">
-                    <div class="team-info">
-                      <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
-                      <span class="team">Man United</span>
-                    </div>
-                    <span class="score">-</span>
-                  </div>
-                </div>
-              </div>
-
-              <h5></h5>
-              <div class="match-row">
-                <div class="match-time">27.12. 21:00</div>
-                <div class="teams">
-                  <div class="team-row">
-                    <div class="team-info">
-                      <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
-                      <span class="team">Liverpool</span>
-                    </div>
-                    <span class="score">-</span>
-                  </div>
-                  <div class="team-row">
-                    <div class="team-info">
-                      <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
-                      <span class="team">Man United</span>
-                    </div>
-                    <span class="score">-</span>
-                  </div>
-                </div>
-              </div>
-              
-
-            </div>
-
-
-
           </div>
 
           <!-- VÝSLEDKY -->
@@ -253,17 +206,21 @@
           <img src="Obrázky/La Liga.png" alt="La Liga Logo" class="league-logo">
           <h3 class="league-title">La Liga</h3>
         </div>
-        
 
         <div class="tab-content">
+           <!-- PREHĽAD KOLA -->
           <div class="tab-panel" data-tab="overview">
             <h4>Najbližšie kolo: 18. kolo</h4>
             <p>Popis: Real Madrid, Barcelona a ďalšie tímy nastúpia v rámci 18. kola La Ligy.</p>
           </div>
+
+          <!-- PROGRAM -->
           <div class="tab-panel" data-tab="schedule">
             <div class="match-round" data-round="18">
               <h5>18. kolo</h5>
-              <div class="match-row">
+              <div class="match-row" data-home="Real Madrid" data-away="Barcelona" data-league="La Liga"
+                data-logo="Obrázky/La Liga.png" data-round="15. kolo" data-date="10.01.2026 21:00"
+                data-stadium="Santiago Bernabéu" data-city="Madrid" data-capacity="81044">
                 <div class="match-time">27.12. 18:00</div>
                 <div class="teams">
                   <div class="team-row">
@@ -284,6 +241,8 @@
               </div>
             </div>
           </div>
+
+          <!-- VÝSLEDKY -->
           <div class="tab-panel" data-tab="results">
             <div class="match-round" data-round="17">
               <h5>17. kolo</h5>
@@ -308,6 +267,8 @@
               </div>
             </div>
           </div>
+
+          <!-- TABUĽKY -->
           <div class="tab-panel" data-tab="table">
             <table class="league-table">
               <thead>
@@ -362,13 +323,16 @@
           <img src="Obrázky/Bundesliga.png" alt="Bundesliga Logo" class="league-logo">
           <h3 class="league-title">Bundesliga</h3>
         </div>
-        
+
 
         <div class="tab-content">
+          <!-- PREHĽAD KOLA -->
           <div class="tab-panel" data-tab="overview">
             <h4>Najbližšie kolo: 18. kolo</h4>
             <p>Popis: Bayern, Dortmund a ďalšie tímy nastúpia v rámci 18. kola Bundesligy.</p>
           </div>
+
+          <!-- PROGRAM -->
           <div class="tab-panel" data-tab="schedule">
             <div class="match-round" data-round="18">
               <h5>18. kolo</h5>
@@ -389,6 +353,8 @@
               </div>
             </div>
           </div>
+
+          <!-- VÝSLEDKY -->
           <div class="tab-panel" data-tab="results">
             <div class="match-round" data-round="17">
               <h5>17. kolo</h5>
@@ -409,6 +375,8 @@
               </div>
             </div>
           </div>
+
+          <!-- TABUĽKY -->
           <div class="tab-panel" data-tab="table">
             <table class="league-table">
               <thead>
@@ -458,13 +426,16 @@
           <img src="Obrázky/Ligue 1.png" alt="Ligue 1 Logo" class="league-logo">
           <h3 class="league-title">Ligue 1</h3>
         </div>
-        
+
 
         <div class="tab-content">
+          <!-- PREHĽAD KOLA -->
           <div class="tab-panel" data-tab="overview">
             <h4>Najbližšie kolo: 18. kolo</h4>
             <p>Popis: PSG, Marseille a ďalšie tímy nastúpia v rámci 18. kola Ligue 1.</p>
           </div>
+
+          <!-- PROGRAM -->
           <div class="tab-panel" data-tab="schedule">
             <div class="match-round" data-round="18">
               <h5>18. kolo</h5>
@@ -485,6 +456,8 @@
               </div>
             </div>
           </div>
+
+          <!-- VÝSLEDKY -->
           <div class="tab-panel" data-tab="results">
             <div class="match-round" data-round="17">
               <h5>17. kolo</h5>
@@ -505,6 +478,8 @@
               </div>
             </div>
           </div>
+
+          <!-- TABUĽKY -->
           <div class="tab-panel" data-tab="table">
             <table class="league-table">
               <thead>
@@ -554,13 +529,16 @@
           <img src="Obrázky/Seria A.png" alt="Serie A Logo" class="league-logo">
           <h3 class="league-title">Serie A</h3>
         </div>
-       
+
 
         <div class="tab-content">
+          <!-- PREHĽAD KOLA -->
           <div class="tab-panel" data-tab="overview">
             <h4>Najbližšie kolo: 20. kolo</h4>
             <p>Popis: Juventus, Inter a ďalšie tímy nastúpia v rámci 20. kola Serie A.</p>
           </div>
+
+          <!-- PROGRAM -->
           <div class="tab-panel" data-tab="schedule">
             <div class="match-round" data-round="20">
               <h5>20. kolo</h5>
@@ -581,6 +559,8 @@
               </div>
             </div>
           </div>
+
+          <!-- VÝSLEDKY -->
           <div class="tab-panel" data-tab="results">
             <div class="match-round" data-round="19">
               <h5>19. kolo</h5>
@@ -601,6 +581,8 @@
               </div>
             </div>
           </div>
+
+          <!-- TABUĽKY -->
           <div class="tab-panel" data-tab="table">
             <table class="league-table">
               <thead>
@@ -650,7 +632,63 @@
     © LiveArena
   </footer>
 
+
+
+  <div id="matchModal" class="modal">
+    <div class="modal-content">
+
+      <!-- Zatvárací krížik -->
+      <span class="modal-close">&times;</span>
+
+      <!-- HEADER -->
+      <div class="modal-header">
+        <div class="league-info">
+          <img id="modalLeagueLogo" class="league-logo-small">
+          <span id="modalLeagueName"></span>
+        </div>
+        <div class="round-info" id="modalRound"></div>
+      </div>
+
+      <!-- DATUM NAD VS -->
+      <div class="match-date" id="modalDateDisplay"></div>
+
+      <!-- TÍMY -->
+      <div class="modal-teams">
+        <div class="team team-home">
+          <div class="team-bg-white">
+            <img id="modalHomeLogo" class="team-logo-large">
+          </div>
+          <h2 id="modalHomeName"></h2>
+        </div>
+
+        <div class="vs">-</div>
+
+        <div class="team team-away">
+          <div class="team-bg-white">
+            <img id="modalAwayLogo" class="team-logo-large">
+          </div>
+          <h2 id="modalAwayName"></h2>
+        </div>
+      </div>
+
+      <!-- DETAILY -->
+      <div class="match-details">
+        <div class="stadium">
+          <span class="icon">🏟️</span>
+          <span id="modalStadium"></span>
+        </div>
+        <div class="capacity">
+          <span class="icon">👥</span>
+          <span id="modalCapacity"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <script src="filter.js"></script>
+
+
 </body>
 
 </html>
