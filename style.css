@@ -40,7 +40,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 14px 28px;
-    height: 50px;
+    height: 80px;
     color: #cfd8dc;
     text-decoration: none;
     font-size: 18px;
@@ -246,6 +246,30 @@ body {
 .team {
     color: #cfd8dc;
     font-weight: 500;
+}
+
+.team-target {
+    cursor: pointer;
+}
+
+.team-name-link {
+    transition: text-decoration 0.2s;
+}
+
+.team-target:hover .team-name-link {
+    text-decoration: underline;
+}
+
+.team-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-link:hover .team-name {
+    text-decoration: underline;
 }
 
 .score {
