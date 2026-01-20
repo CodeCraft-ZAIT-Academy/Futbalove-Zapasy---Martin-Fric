@@ -24,15 +24,1088 @@
 
     <div class="content">
 
-       
+
 
         <!-- MAIN -->
-        <main class="main-container">
-            <h2>Klub</h2>
+        <main class="main-container-team">
 
-            <div id="teamCard" class="team-card">
-                <!-- tu sa zobrazí obsah cez JS -->
+            <!-- HLAVIČKA TÍMU -->
+            <section class="team-header">
+                <div class="team-header-info">
+                    <img id="teamLogo" class="team-header-logo" alt="Liverpool FC Logo">
+
+                    <div class="team-header-text">
+                        <h1 id="teamName"></h1>
+                        <span id="teamLeague"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TABY -->
+            <div class="team-tabs">
+                <button class="team-tab active" data-tab="overview">Prehľad</button>
+                <button class="team-tab" data-tab="schedule">Program</button>
+                <button class="team-tab" data-tab="results">Výsledky</button>
+                <button class="team-tab" data-tab="squad">Súpiska</button>
             </div>
+
+            <!-- OBSAH TABOV -->
+            <section class="team-tab-content active" data-tab="overview">
+                <h2>Prehľad tímu</h2>
+                <p id="teamDescription" class="team-description"></p>
+                <div class="team-info-grid">
+                    <div><strong>Štadión:</strong> <span id="teamStadium"></span></div>
+                    <div><strong>Mesto:</strong> <span id="teamCity"></span></div>
+                    <div><strong>Založený:</strong> <span id="teamFounded"></span></div>
+                    <div><strong>Trofeje:</strong> <span id="teamTrophies"></span></div>
+                </div>
+            </section>
+
+            <section class="team-tab-content" data-tab="schedule">
+                <h2>Program zápasov</h2>
+                <!-- 23. kolo -->
+                <div class="match-round" data-round="23">
+                    <h5>23. kolo</h5>
+                    <div class="match-row" data-home="Bournemouth" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="23. kolo" data-date="24.01.2026 18:30"
+                        data-stadium="Vitality Stadium" data-city="Bournemouth" data-capacity="112000">
+                        <div class="match-time">24.01. 18:30</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Bournemouth.png" alt="Bournemouth" class="team-logo">
+                                    <span class="team">Bournemouth</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 24. kolo -->
+                <div class="match-round" data-round="24">
+                    <h5>24. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Newcastle" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="24. kolo" data-date="31.01.2026 21:00"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">31.01. 21:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Newcastle.png" alt="Newcastle" class="team-logo">
+                                    <span class="team">Newcastle</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 25. kolo -->
+                <div class="match-round" data-round="25">
+                    <h5>25. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Man City" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="25. kolo" data-date="08.02.2026 17:30"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">08.02. 17:30</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Man City.png City.png" alt="Man City" class="team-logo">
+                                    <span class="team">Man City</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 26. kolo -->
+                <div class="match-round" data-round="26">
+                    <h5>26. kolo</h5>
+                    <div class="match-row" data-home="Sunderland" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="26. kolo" data-date="11.02.2026 21:15"
+                        data-stadium="Stadium of Light" data-city="Sunderland" data-capacity="49000">
+                        <div class="match-time">11.02. 21:15</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Sunderland.png" alt="Sunderland" class="team-logo">
+                                    <span class="team">Sunderland</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 27. kolo -->
+                <div class="match-round" data-round="27">
+                    <h5>27. kolo</h5>
+                    <div class="match-row" data-home="Nottingham" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="27. kolo" data-date="21.02.2026 16:00"
+                        data-stadium="City Ground" data-city="Nottingham" data-capacity="30500">
+                        <div class="match-time">21.02. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Nottingham.png" alt="Nottingham" class="team-logo">
+                                    <span class="team">Nottingham</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 28. kolo -->
+                <div class="match-round" data-round="28">
+                    <h5>28. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="West Ham" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="28. kolo" data-date="28.02.2026 16:00"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">28.02. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/West Ham.png" alt="West Ham" class="team-logo">
+                                    <span class="team">West Ham</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 29. kolo -->
+                <div class="match-round" data-round="29">
+                    <h5>29. kolo</h5>
+                    <div class="match-row" data-home="Wolves" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="29. kolo" data-date="04.03.2026 21:00"
+                        data-stadium="Molineux Stadium" data-city="Wolverhampton" data-capacity="32050">
+                        <div class="match-time">04.03. 21:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Wolves.png" alt="Wolves" class="team-logo">
+                                    <span class="team">Wolves</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 30. kolo -->
+                <div class="match-round" data-round="30">
+                    <h5>30. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Tottenham" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="30. kolo" data-date="14.03.2026 16:00"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">14.03. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Tottenham.png" alt="Tottenham" class="team-logo">
+                                    <span class="team">Tottenham</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 31. kolo -->
+                <div class="match-round" data-round="31">
+                    <h5>31. kolo</h5>
+                    <div class="match-row" data-home="Brighton" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="31. kolo" data-date="21.03.2026 16:00"
+                        data-stadium="American Express Stadium" data-city="Brighton" data-capacity="30750">
+                        <div class="match-time">21.03. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Brighton.png" alt="Brighton" class="team-logo">
+                                    <span class="team">Brighton</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 32. kolo -->
+                <div class="match-round" data-round="32">
+                    <h5>32. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Fulham" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="32. kolo" data-date="11.04.2026 16:00"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">11.04. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Fulham.png" alt="Fulham" class="team-logo">
+                                    <span class="team">Fulham</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 33. kolo -->
+                <div class="match-round" data-round="33">
+                    <h5>33. kolo</h5>
+                    <div class="match-row" data-home="Everton" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="33. kolo" data-date="18.04.2026 16:00"
+                        data-stadium="Goodison Park" data-city="Liverpool" data-capacity="39500">
+                        <div class="match-time">18.04. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Everton.png" alt="Everton" class="team-logo">
+                                    <span class="team">Everton</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 34. kolo -->
+                <div class="match-round" data-round="34">
+                    <h5>34. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Crystal Palace" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="34. kolo" data-date="25.04.2026 16:00"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">25.04. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Crystal Palace.png" alt="Crystal Palace" class="team-logo">
+                                    <span class="team">Crystal Palace</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 35. kolo -->
+                <div class="match-round" data-round="35">
+                    <h5>35. kolo</h5>
+                    <div class="match-row" data-home="Man United" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="35. kolo" data-date="02.05.2026 16:00"
+                        data-stadium="Old Trafford" data-city="Manchester" data-capacity="74879">
+                        <div class="match-time">02.05. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
+                                    <span class="team">Man United</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 36. kolo -->
+                <div class="match-round" data-round="36">
+                    <h5>36. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Chelsea" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="36. kolo" data-date="09.05.2026 16:00"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">09.05. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Chelsea.png" alt="Chelsea" class="team-logo">
+                                    <span class="team">Chelsea</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 37. kolo -->
+                <div class="match-round" data-round="37">
+                    <h5>37. kolo</h5>
+                    <div class="match-row" data-home="Aston Villa" data-away="Liverpool" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="37. kolo" data-date="17.05.2026 15:00"
+                        data-stadium="Villa Park" data-city="Birmingham" data-capacity="42324">
+                        <div class="match-time">17.05. 15:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Aston Villa.png" alt="Aston Villa" class="team-logo">
+                                    <span class="team">Aston Villa</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 38. kolo -->
+                <div class="match-round" data-round="38">
+                    <h5>38. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Brentford" data-league="Premier League"
+                        data-logo="Obrázky/Premier League.png" data-round="38. kolo" data-date="24.05.2026 16:00"
+                        data-stadium="Anfield" data-city="Liverpool" data-capacity="61 276">
+                        <div class="match-time">24.05. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Brentford.png" alt="Brentford" class="team-logo">
+                                    <span class="team">Brentford</span>
+                                </div>
+                                <span class="score">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team-tab-content" data-tab="results">
+                <h2>Výsledky zápasov</h2>
+                <!-- 22. kolo -->
+                <div class="tab-panel" data-tab="results">
+                    <div class="match-round" data-round="19">
+                        <h5>19. kolo</h5>
+                        <div class="match-row" data-home="Liverpool" data-away="Burnley" data-home-score="1"
+                            data-away-score="1" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="20. kolo" data-date="17.01.2026 16:00" data-stadium="Anfield"
+                            data-city="Liverpool" data-capacity="61 276">
+                            <div class="match-time">17.01. 16:00</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Burnley.png" alt="Burnley" class="team-logo">
+                                        <span class="team">Burnley</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 21. kolo -->
+                <div class="match-round" data-round="21">
+                    <h5>21. kolo</h5>
+                    <div class="match-row" data-home="Arsenal" data-away="Liverpool" data-home-score="0"
+                        data-away-score="0" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="21. kolo" data-date="08.01.2026 21:00" data-stadium="Emirates Stadium" data-city="London"
+                        data-capacity="60 704">
+                        <div class="match-time">08.01. 21:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Arsenal.png" alt="Arsenal" class="team-logo">
+                                    <span class="team">Arsenal</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 20. kolo -->
+                <div class="match-round" data-round="20">
+                    <h5>20. kolo</h5>
+                    <div class="match-row" data-home="Fulham" data-away="Liverpool" data-home-score="2"
+                        data-away-score="2" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="20. kolo" data-date="04.01.2026 16:15" data-stadium="Craven Cottage" data-city="London"
+                        data-capacity="29 589">
+                        <div class="match-time">04.01. 16:15</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Fulham.png" alt="Fulham" class="team-logo">
+                                    <span class="team">Fulham</span>
+                                </div>
+                                <span class="score">2</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 19. kolo -->
+                <div class="match-round" data-round="19">
+                    <h5>19. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Leeds" data-home-score="0"
+                        data-away-score="0" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="19. kolo" data-date="01.01.2026 18:30" data-stadium="Anfield" data-city="Liverpool"
+                        data-capacity="61 276">
+                        <div class="match-time">01.01. 18:30</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Leeds.png" alt="Leeds" class="team-logo">
+                                    <span class="team">Leeds</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 18. kolo -->
+                <div class="match-round" data-round="18">
+                    <h5>18. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Wolves" data-home-score="2"
+                        data-away-score="1" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="18. kolo" data-date="27.12.2025 16:00" data-stadium="Anfield" data-city="Liverpool"
+                        data-capacity="61 276">
+                        <div class="match-time">27.12. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">2</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Wolves.png" alt="Wolves" class="team-logo">
+                                    <span class="team">Wolves</span>
+                                </div>
+                                <span class="score">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17. kolo -->
+                <div class="match-round" data-round="17">
+                    <h5>17. kolo</h5>
+                    <div class="match-row" data-home="Tottenham" data-away="Liverpool" data-home-score="1"
+                        data-away-score="2" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="17. kolo" data-date="20.12.2025 18:30" data-stadium="Tottenham Hotspur Stadium"
+                        data-city="London" data-capacity="62 850">
+                        <div class="match-time">20.12. 18:30</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Tottenham.png" alt="Tottenham" class="team-logo">
+                                    <span class="team">Tottenham</span>
+                                </div>
+                                <span class="score">1</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16. kolo -->
+                <div class="match-round" data-round="16">
+                    <h5>16. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Brighton" data-home-score="2"
+                        data-away-score="0" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="16. kolo" data-date="13.12.2025 16:00" data-stadium="Anfield" data-city="Liverpool"
+                        data-capacity="61 276">
+                        <div class="match-time">13.12. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">2</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Brighton.png" alt="Brighton" class="team-logo">
+                                    <span class="team">Brighton</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15. kolo -->
+                <div class="match-round" data-round="15">
+                    <h5>15. kolo</h5>
+                    <div class="match-row" data-home="Leeds" data-away="Liverpool" data-home-score="3"
+                        data-away-score="3" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="15. kolo" data-date="6.12.2025 18:30" data-stadium="Elland Road" data-city="Leeds"
+                        data-capacity="37 792">
+                        <div class="match-time">6.12. 18:30</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Leeds.png" alt="Leeds" class="team-logo">
+                                    <span class="team">Leeds</span>
+                                </div>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. kolo -->
+                <div class="match-round" data-round="14">
+                    <h5>14. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Sunderland" data-home-score="1"
+                        data-away-score="1" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="14. kolo" data-date="03.12.2025 21:15" data-stadium="Anfield" data-city="Liverpool"
+                        data-capacity="61 276">
+                        <div class="match-time">03.12. 21:15</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">1</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Sunderland.png" alt="Sunderland" class="team-logo">
+                                    <span class="team">Sunderland</span>
+                                </div>
+                                <span class="score">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. kolo -->
+                <div class="match-round" data-round="12">
+                    <h5>12. kolo</h5>
+                    <div class="match-row" data-home="West Ham" data-away="Liverpool" data-home-score="0"
+                        data-away-score="2" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="12. kolo" data-date="30.11.2025 15:05" data-stadium="London Stadium" data-city="London"
+                        data-capacity="62 500">
+                        <div class="match-time">30.11. 15:05</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/West Ham.png" alt="West Ham" class="team-logo">
+                                    <span class="team">West Ham</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. kolo -->
+                <div class="match-round" data-round="12">
+                    <h5>12. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Nottingham Forest" data-home-score="0"
+                        data-away-score="3" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="12. kolo" data-date="22.11.2025 16:00" data-stadium="Anfield" data-city="Liverpool"
+                        data-capacity="61 276">
+                        <div class="match-time">22.11. 16:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Nottingham.png" alt="Nottingham" class="team-logo">
+                                    <span class="team">Nottingham</span>
+                                </div>
+                                <span class="score">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. kolo -->
+                <div class="match-round" data-round="11">
+                    <h5>11. kolo</h5>
+                    <div class="match-row" data-home="Manchester City" data-away="Liverpool" data-home-score="3"
+                        data-away-score="0" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="11. kolo" data-date="09.11.2025 17:30" data-stadium="Etihad Stadium"
+                        data-city="Manchester" data-capacity="55097">
+                        <div class="match-time">09.11. 17:30</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Man City.png" alt="Man City" class="team-logo">
+                                    <span class="team">Man City</span>
+                                </div>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. kolo -->
+                <div class="match-round" data-round="10">
+                    <h5>10. kolo</h5>
+                    <div class="match-row" data-home="Liverpool" data-away="Aston Villa" data-home-score="2"
+                        data-away-score="0" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                        data-round="10. kolo" data-date="01.11.2025 21:00" data-stadium="Anfield" data-city="Liverpool"
+                        data-capacity="61 276">
+                        <div class="match-time">01.11. 21:00</div>
+                        <div class="teams">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                    <span class="team">Liverpool</span>
+                                </div>
+                                <span class="score">2</span>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img src="Obrázky/Aston Villa.png" alt="Aston Villa" class="team-logo">
+                                    <span class="team">Aston Villa</span>
+                                </div>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. kolo -->
+                    <div class="match-round" data-round="9">
+                        <h5>9. kolo</h5>
+                        <div class="match-row" data-home="Brentford" data-away="Liverpool" data-home-score="3"
+                            data-away-score="2" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="9. kolo" data-date="26.10.2025 16:00" data-stadium="Brentford Community Stadium"
+                            data-city="Brentford" data-capacity="17 250">
+                            <div class="match-time">26.10. 16:00</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Brentford.png" alt="Brentford" class="team-logo">
+                                        <span class="team">Brentford</span>
+                                    </div>
+                                    <span class="score">3</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. kolo -->
+                    <div class="match-round" data-round="8">
+                        <h5>8. kolo</h5>
+                        <div class="match-row" data-home="Liverpool" data-away="Man United" data-home-score="1"
+                            data-away-score="2" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="8. kolo" data-date="19.10.2025 17:30" data-stadium="Anfield"
+                            data-city="Liverpool" data-capacity="61 276">
+                            <div class="match-time">19.10. 17:30</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Man United.png" alt="Man United" class="team-logo">
+                                        <span class="team">Man United</span>
+                                    </div>
+                                    <span class="score">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. kolo -->
+                    <div class="match-round" data-round="7">
+                        <h5>7. kolo</h5>
+                        <div class="match-row" data-home="Chelsea" data-away="Liverpool" data-home-score="2"
+                            data-away-score="1" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="7. kolo" data-date="04.10.2025 18:30" data-stadium="Stamford Bridge"
+                            data-city="London" data-capacity="40 341">
+                            <div class="match-time">04.10. 18:30</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Chelsea.png" alt="Chelsea" class="team-logo">
+                                        <span class="team">Chelsea</span>
+                                    </div>
+                                    <span class="score">2</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. kolo -->
+                    <div class="match-round" data-round="6">
+                        <h5>6. kolo</h5>
+                        <div class="match-row" data-home="Crystal Palace" data-away="Liverpool" data-home-score="2"
+                            data-away-score="1" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="6. kolo" data-date="27.09.2025 16:00" data-stadium="Selhurst Park"
+                            data-city="London" data-capacity="25 486">
+                            <div class="match-time">27.09. 16:00</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Crystal Palace.png" alt="Crystal Palace" class="team-logo">
+                                        <span class="team">Crystal Palace</span>
+                                    </div>
+                                    <span class="score">2</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. kolo -->
+                    <div class="match-round" data-round="5">
+                        <h5>5. kolo</h5>
+                        <div class="match-row" data-home="Liverpool" data-away="Everton" data-home-score="2"
+                            data-away-score="1" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="5. kolo" data-date="20.09.2025 13:30" data-stadium="Anfield"
+                            data-city="Liverpool" data-capacity="61 276">
+                            <div class="match-time">20.09. 13:30</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">2</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Everton.png" alt="Everton" class="team-logo">
+                                        <span class="team">Everton</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. kolo -->
+                    <div class="match-round" data-round="4">
+                        <h5>4. kolo</h5>
+                        <div class="match-row" data-home="Burnley" data-away="Liverpool" data-home-score="0"
+                            data-away-score="1" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="4. kolo" data-date="14.09.2025 15:00" data-stadium="Turf Moor"
+                            data-city="Burnley" data-capacity="22 546">
+                            <div class="match-time">14.09. 15:00</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Burnley.png" alt="Burnley" class="team-logo">
+                                        <span class="team">Burnley</span>
+                                    </div>
+                                    <span class="score">0</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. kolo -->
+                    <div class="match-round" data-round="3">
+                        <h5>3. kolo</h5>
+                        <div class="match-row" data-home="Liverpool" data-away="Arsenal" data-home-score="1"
+                            data-away-score="0" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="3. kolo" data-date="31.08.2025 17:30" data-stadium="Anfield"
+                            data-city="Liverpool" data-capacity="61 276">
+                            <div class="match-time">31.08. 17:30</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">1</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Arsenal.png" alt="Arsenal" class="team-logo">
+                                        <span class="team">Arsenal</span>
+                                    </div>
+                                    <span class="score">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. kolo -->
+                    <div class="match-round" data-round="2">
+                        <h5>2. kolo</h5>
+                        <div class="match-row" data-home="Newcastle" data-away="Liverpool" data-home-score="2"
+                            data-away-score="3" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="2. kolo" data-date="25.08.2025 21:00" data-stadium="St James' Park"
+                            data-city="Newcastle" data-capacity="52 305">
+                            <div class="match-time">25.08. 21:00</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Newcastle.png" alt="Newcastle"
+                                            class="team-logo">
+                                        <span class="team">Newcastle</span>
+                                    </div>
+                                    <span class="score">2</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. kolo -->
+                    <div class="match-round" data-round="1">
+                        <h5>1. kolo</h5>
+                        <div class="match-row" data-home="Liverpool" data-away="Bournemouth" data-home-score="4"
+                            data-away-score="2" data-league="Premier League" data-logo="Obrázky/Premier League.png"
+                            data-round="1. kolo" data-date="15.08.2025 21:00" data-stadium="Anfield"
+                            data-city="Liverpool" data-capacity="61 276">
+                            <div class="match-time">15.08. 21:00</div>
+                            <div class="teams">
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Liverpool.png" alt="Liverpool" class="team-logo">
+                                        <span class="team">Liverpool</span>
+                                    </div>
+                                    <span class="score">4</span>
+                                </div>
+                                <div class="team-row">
+                                    <div class="team-info">
+                                        <img src="Obrázky/Bournemouth.png" alt="Bournemouth" class="team-logo">
+                                        <span class="team">Bournemouth</span>
+                                    </div>
+                                    <span class="score">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="team-tab-content" data-tab="squad">
+                <h2>Súpiska hráčov</h2>
+
+                <div id="squadList" class="squad-list">
+
+                    <div class="squad-role" data-role="Brankár">
+                        <h3 class="squad-role-title">Brankári</h3>
+                        <div class="role-players" id="goalkeepers"></div>
+                    </div>
+
+                    <div class="squad-role" data-role="Obranca">
+                        <h3 class="squad-role-title">Obrancovia</h3>
+                        <div class="role-players" id="defenders"></div>
+                    </div>
+
+                    <div class="squad-role" data-role="Záložník">
+                        <h3 class="squad-role-title">Záložníci</h3>
+                        <div class="role-players" id="midfielders"></div>
+                    </div>
+
+                    <div class="squad-role" data-role="Útočník">
+                        <h3 class="squad-role-title">Útočníci</h3>
+                        <div class="role-players" id="forwards"></div>
+                    </div>
+
+                </div>
+            </section>
 
         </main>
     </div>
