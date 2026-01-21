@@ -8,6 +8,9 @@ const teamKey = params.get('team');
    DÁTA O KLUBOCH
 ========================= */
 const teams = {
+
+    /* PREMIER LEAGUE */
+
     liverpool: {
         name: "Liverpool FC",
         league: "Premier League",
@@ -28,6 +31,9 @@ const teams = {
         trophies: "20× Premier League, 3× Liga majstrov",
         description: "Manchester United patrí medzi najúspešnejšie kluby v histórii anglického futbalu."
     },
+
+    /* LA LIGA */
+
     realmadrid: {
         name: "Real Madrid",
         league: "La Liga",
@@ -37,7 +43,25 @@ const teams = {
         founded: "1902",
         trophies: "14× La Liga, 15× Copa del Rey, 14× Liga majstrov",
         description: "Real Madrid je španielsky futbalový klub známy svojou bohatou históriou a úspešnými ročníkmi v rámci Ligy majstrov."
+    },
+    barcelona: {
+        name: "FC Barcelona",
+        league: "La Liga",
+        logo: "Obrázky/Barcelona.png",
+        stadium: "Spotify Camp Nou",
+        city: "Barcelona",
+        founded: "1899",
+        trophies: "27× La Liga, 31× Copa del Rey, 5× Liga majstrov",
+        description: "FC Barcelona je jeden z najúspešnejších španielskych klubov, známy svojou filozofiou hry založenou na držaní lopty a akadémiou La Masia."
     }
+
+    /*BUNDESLIGA */
+
+
+    /* LIGUE 1 */
+
+
+    /* SERIE A */
 };
 
 /* =========================
