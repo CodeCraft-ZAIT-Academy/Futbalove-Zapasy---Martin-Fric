@@ -130,6 +130,11 @@ body {
     margin-bottom: 20px;
 }
 
+.main-container h1 {
+    color: #00c2ff;
+    margin-bottom: 40px;
+}
+
 .league-title {
     color: #00c2ff;
     margin: 20px 0 10px;
@@ -634,5 +639,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     margin-top: 40px;
+}
+
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.footer-links {
+    position: absolute;
+    right: 30px; /* odsadenie od pravej strany */
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #cfd8dc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: #00c2ff;
 }
