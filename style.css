@@ -19,7 +19,8 @@ body {
 /* MAIN INDEX*/
 
 .logo img {
-    height: 250px;
+    height: 200px; /* Aby sa zmestilo do 120px headeru */
+    width: auto;   /* Zachová pomer strán */
     margin-left: 30px;
 }
 
@@ -666,4 +667,190 @@ body {
 
 .footer-links a:hover {
     color: #00c2ff;
+}
+
+/* =========================================
+   RESPONZIVITA (MEDIA QUERIES)
+   Vložte toto na úplný koniec style.css
+========================================= */
+
+/* ÚPRAVA PRE TABLETY A MENŠIE LAPTOPY (do 1024px) */
+@media screen and (max-width: 1024px) {
+    .content {
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .sidebar {
+        width: 200px; /* Užší sidebar */
+    }
+}
+
+/* ÚPRAVA PRE MOBILY (do 768px) */
+@media screen and (max-width: 768px) {
+
+    /* --- HEADER & NAVIGÁCIA --- */
+    .header {
+        height: auto; /* Flexibilná výška */
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        height: 80px; /* Zmenšenie loga na mobile */
+        margin-left: 0;
+    }
+
+    .nav {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        gap: 10px;
+    }
+
+    .nav-item {
+        height: 50px; /* Menšie tlačidlá */
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    /* --- HLAVNÝ LAYOUT (SIDEBAR + MAIN) --- */
+    .content {
+        flex-direction: column; /* Pod seba namiesto vedľa seba */
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar na celú šírku */
+        margin-bottom: 20px;
+    }
+    
+    .league-list {
+        display: flex;
+        flex-wrap: wrap; /* Ligy vedľa seba ak sa zmestia */
+        gap: 10px;
+    }
+    
+    .league-list li {
+        flex: 1 1 auto; /* Flexibilná šírka položiek */
+    }
+
+    .league-item {
+        justify-content: center;
+        margin-bottom: 0;
+        background-color: #002836;
+    }
+
+    /* --- ZÁPASY (MATCH ROW) --- */
+    .match-row {
+        flex-direction: column; /* Čas hore, tímy dole */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .match-time {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #003344;
+        padding-bottom: 5px;
+    }
+
+    .teams {
+        width: 100%;
+    }
+
+    /* --- TABUĽKY (SCROLLOVANIE) --- */
+    /* Toto zabezpečí, že tabuľka nevytečie z obrazovky */
+    .tab-panel, .league-section {
+        overflow-x: auto; 
+    }
+    
+    .league-table {
+        min-width: 600px; /* Vynúti šírku, aby sa dalo scrollovať */
+    }
+
+    /* --- TÍMOVÁ STRÁNKA --- */
+    .team-header-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .team-header-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .team-info-grid {
+        grid-template-columns: 1fr; /* Informácie pod seba */
+    }
+
+    /* Súpiska hráčov na mobile */
+    .player-row {
+        grid-template-columns: 40px 1fr; /* Zjednodušený grid */
+        gap: 5px;
+        padding: 15px;
+        position: relative;
+    }
+    
+    .player-position {
+        grid-column: 2;
+        font-size: 0.9em;
+    }
+    
+    .player-country {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* --- MODAL (VYSKAKOVACIE OKNO) --- */
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        max-height: 90vh; /* Aby sa zmestil na výšku */
+        overflow-y: auto;
+    }
+
+    .modal-teams {
+        gap: 10px;
+    }
+
+    .vs {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .team-logo-large {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .team-bg-white {
+        padding: 8px;
+    }
+
+    /* --- FOOTER --- */
+    .footer {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-center, .footer-links {
+        position: static; /* Zrušenie absolútnej pozície */
+        transform: none;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
