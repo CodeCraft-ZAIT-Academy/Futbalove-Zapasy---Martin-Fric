@@ -683,7 +683,9 @@ body {
     }
 }
 
-/* ÚPRAVA PRE MOBILY */
+/* --------------------------------------------------- */
+/* KOMPLETNE OPRAVENÁ RESPONZIVITA PRE MOBILY (768px a menej) */
+/* --------------------------------------------------- */
 @media screen and (max-width: 768px) {
 
     /* HEADER & NAVIGÁCIA */
@@ -698,7 +700,7 @@ body {
     }
 
     .logo img {
-        height: 80px; 
+        height: 70px; 
         margin-left: 0;
     }
 
@@ -707,39 +709,36 @@ body {
         width: 100%;
         justify-content: center;
         height: auto;
-        gap: 10px;
+        gap: 8px;
+        flex-wrap: wrap; /* Aby sa menu nezalomilo škaredo */
     }
 
     .nav-item {
-        height: 50px; 
-        padding: 10px 15px;
-        font-size: 16px;
+        height: 45px; 
+        padding: 8px 12px;
+        font-size: 15px;
     }
 
     /* HLAVNÝ LAYOUT */
     .content {
         flex-direction: column; 
-        padding: 15px;
+        padding: 10px;
+        gap: 15px;
     }
 
     .sidebar {
         width: 100%; 
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .league-list {
-        display: flex;
-        flex-wrap: wrap; 
-        gap: 10px;
-    }
-    
-    .league-list li {
-        flex: 1 1 auto; 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Lepšie ako flex-wrap */
+        gap: 8px;
     }
 
     .league-item {
-        justify-content: center;
-        margin-bottom: 0;
+        justify-content: flex-start;
         background-color: #002836;
     }
 
@@ -747,88 +746,155 @@ body {
     .match-row {
         flex-direction: column; 
         align-items: flex-start;
-        gap: 10px;
+        gap: 8px;
+        padding: 10px;
     }
 
     .match-time {
         width: 100%;
         text-align: left;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
         border-bottom: 1px solid #003344;
         padding-bottom: 5px;
+        font-size: 0.8rem;
     }
 
     .teams {
         width: 100%;
     }
 
-    /* TABUĽKY */
-    .tab-panel, .league-section {
+    /* --- TABUĽKY - KĽÚČOVÁ OPRAVA --- */
+    .tab-panel, .league-section, .main-container {
         overflow-x: auto; 
+        width: 100%;
+        -webkit-overflow-scrolling: touch; /* Hladký scroll na iPhone */
     }
     
     .league-table {
-        min-width: 600px; 
+        min-width: 550px; /* Toto udrží stĺpce čitateľné, zvyšok sa odscrolluje */
+        display: table; /* Zabezpečí, že sa správa ako tabuľka aj pri scrollovaní */
     }
 
-    /* TÍMOVÁ STRÁNKA */
-    .team-header-info {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
+    .league-table th, .league-table td {
+        padding: 8px 5px;
+        font-size: 14px;
     }
 
-    .team-header-text h1 {
-        font-size: 1.8rem;
+    /* Úprava šírok stĺpcov pre mobil, aby sa ušetril priestor */
+    .league-table th:nth-child(2),
+    .league-table td:nth-child(2) {
+        width: auto; /* Meno tímu sa prispôsobí */
+        white-space: nowrap;
     }
 
-    .team-info-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    /* Súpiska hráčov na mobile */
+    /* --- SÚPISKA HRÁČOV - OPRAVA GRIDU --- */
     .player-row {
-        grid-template-columns: 40px 1fr; 
+        grid-template-columns: 35px 1fr 60px; /* Zredukované na 3 stĺpce pre prehľadnosť */
         gap: 5px;
-        padding: 15px;
+        padding: 12px;
         position: relative;
     }
     
-    .player-position {
+    .player-name {
+        font-size: 15px;
         grid-column: 2;
-        font-size: 0.9em;
+    }
+
+    .player-position {
+        grid-column: 2; /* Pozícia pod menom */
+        font-size: 0.8em;
+        margin-top: -2px;
     }
     
     .player-country {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        grid-column: 3;
+        grid-row: 1 / 3; /* Krajina vycentrovaná vertikálne cez oba riadky */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: static; /* Zrušené absolute, aby to nerozbíjalo layout */
+        font-size: 12px;
     }
 
     /* MODAL */
     .modal-content {
-        width: 95%;
-        padding: 20px;
-        max-height: 90vh; 
-        overflow-y: auto;
+        width: 98%;
+        padding: 15px;
     }
 
     .modal-teams {
-        gap: 10px;
+        gap: 15px;
     }
 
     .vs {
-        font-size: 30px;
+        font-size: 24px;
         margin-bottom: 0;
     }
 
     .team-logo-large {
-        width: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    
+    /* --- MODAL KOMPLETNÁ OPRAVA --- */
+    .modal {
+        padding: 10px; /* Menší padding okolo, aby bolo viac miesta pre obsah */
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: 100%; /* Na mobile využijeme celú šírku */
+        padding: 15px;
+        border-radius: 10px;
+        max-height: 95vh; /* Aby modal nezmizol pod okrajom obrazovky */
+        overflow-y: auto;
+    }
+
+    .modal-header {
+        flex-direction: column; /* Nadpis a kolo pod sebou */
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .round-info {
+        margin-right: 0; /* Zrušíme posun vpravo */
+        font-size: 0.8rem;
+    }
+
+    .modal-teams {
+        flex-direction: row; /* Tímy stále vedľa seba */
+        justify-content: space-around;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .team-logo-large {
+        width: 50px; /* Menšie logá na mobile */
         height: 50px;
     }
-    
+
     .team-bg-white {
-        padding: 8px;
+        padding: 8px; /* Menší biely štvorec okolo loga */
+    }
+
+    .team span {
+        font-size: 0.9rem; /* Menšie názvy tímov v modale */
+        text-align: center;
+    }
+
+    .vs {
+        font-size: 24px; /* Výrazne zmenšené "VS" */
+        margin-bottom: 20px; /* Zmenšený margin z 50px */
+        align-self: center;
+    }
+
+    .match-details {
+        flex-direction: column; /* Detaily ako štadión a čas pod sebou */
+        gap: 8px;
+        font-size: 0.8rem;
+        border-top: 1px solid #333;
+        padding-top: 10px;
     }
 
     /* FOOTER */

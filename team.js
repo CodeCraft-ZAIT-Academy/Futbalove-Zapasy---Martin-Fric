@@ -1057,6 +1057,39 @@ const squads = {
     { number: 23, name: "Reiss Nelson", position: "Útočník", country: "ENG" }
   ],
 
+  liverpool: [
+    // BRANKÁRI
+    { number: 1, name: "Alisson Becker", position: "Brankár", country: "BRA" },
+    { number: 25, name: "Giorgi Mamardashvili", position: "Brankár", country: "GEO" },
+    { number: 62, name: "Caoimhín Kelleher", position: "Brankár", country: "IRL" },
+
+    // OBRANCOVIA
+    { number: 4, name: "Virgil van Dijk", position: "Obranca", country: "NED" },
+    { number: 5, name: "Ibrahima Konaté", position: "Obranca", country: "FRA" },
+    { number: 66, name: "Trent Alexander-Arnold", position: "Obranca", country: "ENG" },
+    { number: 26, name: "Andrew Robertson", position: "Obranca", country: "SCO" },
+    { number: 2, name: "Joe Gomez", position: "Obranca", country: "ENG" },
+    { number: 21, name: "Kostas Tsimikas", position: "Obranca", country: "GRE" },
+    { number: 78, name: "Jarell Quansah", position: "Obranca", country: "ENG" },
+    { number: 84, name: "Conor Bradley", position: "Obranca", country: "NIR" },
+
+    // ZÁLOŽNÍCI
+    { number: 10, name: "Alexis Mac Allister", position: "Záložník", country: "ARG" },
+    { number: 8, name: "Dominik Szoboszlai", position: "Záložník", country: "HUN" },
+    { number: 38, name: "Ryan Gravenberch", position: "Záložník", country: "NED" },
+    { number: 17, name: "Curtis Jones", position: "Záložník", country: "ENG" },
+    { number: 19, name: "Harvey Elliott", position: "Záložník", country: "ENG" },
+    { number: 3, name: "Wataru Endo", position: "Záložník", country: "JPN" },
+
+    // ÚTOČNÍCI
+    { number: 11, name: "Mohamed Salah", position: "Útočník", country: "EGY" },
+    { number: 7, name: "Luis Díaz", position: "Útočník", country: "COL" },
+    { number: 20, name: "Diogo Jota", position: "Útočník", country: "POR" },
+    { number: 9, name: "Darwin Núñez", position: "Útočník", country: "URU" },
+    { number: 18, name: "Cody Gakpo", position: "Útočník", country: "NED" },
+    { number: 15, name: "Federico Chiesa", position: "Útočník", country: "ITA" }
+],
+
   astonvilla: [
     // BRANKÁRI
     { number: 1, name: "Emiliano Martínez", position: "Brankár", country: "ARG" },
