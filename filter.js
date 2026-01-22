@@ -1,6 +1,4 @@
-/* =========================
-   FILTER LÍG
-======================== */
+/* FILTER LÍG */
 document.querySelectorAll('.league-item').forEach(item => {
     item.addEventListener('click', e => {
         e.preventDefault();
@@ -16,9 +14,7 @@ document.querySelectorAll('.league-item').forEach(item => {
 });
 
 
-/* =========================
-   TABY (GLOBÁLNE)
-======================== */
+/* TABY (GLOBÁLNE) */
 const tabs = document.querySelectorAll('.global-tabs .tab-btn');
 
 tabs.forEach(tab => {
@@ -35,9 +31,7 @@ tabs.forEach(tab => {
 });
 
 
-/* =========================
-   MODÁL ZÁPASU (FLASHCORE)
-======================== */
+/* MODÁL ZÁPASU  */
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('matchModal');
     const closeBtn = modal.querySelector('.modal-close');
@@ -54,12 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalStadium = document.getElementById('modalStadium');
     const modalCapacity = document.getElementById('modalCapacity');
 
-    // ➜ **TOTO JE NOVÉ** (skóre)
     const modalVs = document.getElementById('modalVs');
 
-    /* =========================
-       KLIK NA MATCH → MODAL
-    ========================= */
+    /* KLIK NA MATCH → MODAL */
     document.addEventListener('click', e => {
         const match = e.target.closest('.match-row');
         if (!match) return;
@@ -85,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalStadium.textContent = match.dataset.stadium || '';
         modalCapacity.textContent = match.dataset.capacity || '';
 
-        // ➜ **VÝSLEDOK zápasu**
+        // VÝSLEDOK zápasu
         const homeScore = match.dataset.homeScore;
         const awayScore = match.dataset.awayScore;
 
@@ -103,9 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* =========================
-       KLIK NA TÍM V MODALE
-    ========================= */
+    /* KLIK NA TÍM V MODALE */
     document.addEventListener('click', e => {
         const target = e.target.closest('.team-target');
         if (!target || !modal.classList.contains('active')) return;
@@ -124,9 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* =========================
-       ZATVORENIE MODALU
-    ========================= */
+    /*  ZATVORENIE MODALU */
     closeBtn.addEventListener('click', () => modal.classList.remove('active'));
     modal.addEventListener('click', e => {
         if (e.target === modal) modal.classList.remove('active');
@@ -134,9 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* =========================
-   NORMALIZÁCIA NÁZVU TÍMU
-======================== */
+/* NORMALIZÁCIA NÁZVU TÍMU */
 function normalizeTeamId(name = '') {
     return name
         .toLowerCase()

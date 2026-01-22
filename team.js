@@ -1,12 +1,9 @@
-/* =========================
-   NAČÍTANIE TÍMU Z URL
-========================= */
+/*
+   NAČÍTANIE TÍMU Z URL */
 const params = new URLSearchParams(window.location.search);
 const teamKey = params.get('team');
 
-/* =========================
-   DÁTA O KLUBOCH
-========================= */
+/* DÁTA O KLUBOCH */
 const teams = {
 
     /* PREMIER LEAGUE */
@@ -244,9 +241,7 @@ const teams = {
     /* SERIE A */
 };
 
-/* =========================
-   ELEMENTY
-========================= */
+/* ELEMENTY */
 const teamName = document.getElementById('teamName');
 const teamLeague = document.getElementById('teamLeague');
 const teamLogo = document.getElementById('teamLogo');
@@ -257,9 +252,7 @@ const teamFounded = document.getElementById('teamFounded');
 const teamTrophies = document.getElementById('teamTrophies');
 const teamDescription = document.getElementById('teamDescription');
 
-/* =========================
-   ZOBRAZENIE TÍMU
-========================= */
+/* ZOBRAZENIE TÍMU */
 if (!teamKey || !teams[teamKey]) {
     teamName.textContent = "Klub nebol nájdený";
 } else {
@@ -276,9 +269,7 @@ if (!teamKey || !teams[teamKey]) {
     teamDescription.textContent = team.description;
 }
 
-/* =========================
-   SÚPISKY HRÁČOV
-========================= */
+/* SÚPISKY HRÁČOV */
 const squads = {
     /* PREMIER LEAGUE */
      arsenal: [
@@ -775,9 +766,7 @@ const squads = {
 
 
 
-/* =========================
-   VYKRESLENIE SÚPISKY
-========================= */
+/* VYKRESLENIE SÚPISKY */
 const squadBox = document.getElementById('squadList');
 
 if (squadBox && squads[teamKey]) {
@@ -808,9 +797,7 @@ if (squadBox && squads[teamKey]) {
     renderPlayers(forwards, "Útočník");
 }
 
-/* =========================
-   TABY (TEAM PAGE)
-========================= */
+/* TABY */
 document.querySelectorAll('.team-tab').forEach(tab => {
     tab.addEventListener('click', () => {
         document.querySelectorAll('.team-tab').forEach(t => t.classList.remove('active'));

@@ -19,8 +19,8 @@ body {
 /* MAIN INDEX*/
 
 .logo img {
-    height: 200px; /* Aby sa zmestilo do 120px headeru */
-    width: auto;   /* Zachová pomer strán */
+    height: 200px; 
+    width: auto;   
     margin-left: 30px;
 }
 
@@ -654,7 +654,7 @@ body {
 
 .footer-links {
     position: absolute;
-    right: 30px; /* odsadenie od pravej strany */
+    right: 30px; 
     display: flex;
     gap: 20px;
 }
@@ -669,12 +669,9 @@ body {
     color: #00c2ff;
 }
 
-/* =========================================
-   RESPONZIVITA (MEDIA QUERIES)
-   Vložte toto na úplný koniec style.css
-========================================= */
+/* RESPONZIVITA  */
 
-/* ÚPRAVA PRE TABLETY A MENŠIE LAPTOPY (do 1024px) */
+/* ÚPRAVA PRE TABLETY A MENŠIE LAPTOPY */
 @media screen and (max-width: 1024px) {
     .content {
         gap: 20px;
@@ -682,16 +679,16 @@ body {
     }
     
     .sidebar {
-        width: 200px; /* Užší sidebar */
+        width: 200px; 
     }
 }
 
-/* ÚPRAVA PRE MOBILY (do 768px) */
+/* ÚPRAVA PRE MOBILY */
 @media screen and (max-width: 768px) {
 
-    /* --- HEADER & NAVIGÁCIA --- */
+    /* HEADER & NAVIGÁCIA */
     .header {
-        height: auto; /* Flexibilná výška */
+        height: auto; 
         flex-direction: column;
         padding: 15px 0;
     }
@@ -701,7 +698,7 @@ body {
     }
 
     .logo img {
-        height: 80px; /* Zmenšenie loga na mobile */
+        height: 80px; 
         margin-left: 0;
     }
 
@@ -714,30 +711,30 @@ body {
     }
 
     .nav-item {
-        height: 50px; /* Menšie tlačidlá */
+        height: 50px; 
         padding: 10px 15px;
         font-size: 16px;
     }
 
-    /* --- HLAVNÝ LAYOUT (SIDEBAR + MAIN) --- */
+    /* HLAVNÝ LAYOUT */
     .content {
-        flex-direction: column; /* Pod seba namiesto vedľa seba */
+        flex-direction: column; 
         padding: 15px;
     }
 
     .sidebar {
-        width: 100%; /* Sidebar na celú šírku */
+        width: 100%; 
         margin-bottom: 20px;
     }
     
     .league-list {
         display: flex;
-        flex-wrap: wrap; /* Ligy vedľa seba ak sa zmestia */
+        flex-wrap: wrap; 
         gap: 10px;
     }
     
     .league-list li {
-        flex: 1 1 auto; /* Flexibilná šírka položiek */
+        flex: 1 1 auto; 
     }
 
     .league-item {
@@ -746,9 +743,9 @@ body {
         background-color: #002836;
     }
 
-    /* --- ZÁPASY (MATCH ROW) --- */
+    /* ZÁPASY */
     .match-row {
-        flex-direction: column; /* Čas hore, tímy dole */
+        flex-direction: column; 
         align-items: flex-start;
         gap: 10px;
     }
@@ -765,17 +762,16 @@ body {
         width: 100%;
     }
 
-    /* --- TABUĽKY (SCROLLOVANIE) --- */
-    /* Toto zabezpečí, že tabuľka nevytečie z obrazovky */
+    /* TABUĽKY */
     .tab-panel, .league-section {
         overflow-x: auto; 
     }
     
     .league-table {
-        min-width: 600px; /* Vynúti šírku, aby sa dalo scrollovať */
+        min-width: 600px; 
     }
 
-    /* --- TÍMOVÁ STRÁNKA --- */
+    /* TÍMOVÁ STRÁNKA */
     .team-header-info {
         flex-direction: column;
         text-align: center;
@@ -787,12 +783,12 @@ body {
     }
 
     .team-info-grid {
-        grid-template-columns: 1fr; /* Informácie pod seba */
+        grid-template-columns: 1fr; 
     }
 
     /* Súpiska hráčov na mobile */
     .player-row {
-        grid-template-columns: 40px 1fr; /* Zjednodušený grid */
+        grid-template-columns: 40px 1fr; 
         gap: 5px;
         padding: 15px;
         position: relative;
@@ -809,11 +805,11 @@ body {
         right: 10px;
     }
 
-    /* --- MODAL (VYSKAKOVACIE OKNO) --- */
+    /* MODAL */
     .modal-content {
         width: 95%;
         padding: 20px;
-        max-height: 90vh; /* Aby sa zmestil na výšku */
+        max-height: 90vh; 
         overflow-y: auto;
     }
 
@@ -835,7 +831,7 @@ body {
         padding: 8px;
     }
 
-    /* --- FOOTER --- */
+    /* FOOTER */
     .footer {
         height: auto;
         flex-direction: column;
@@ -845,7 +841,7 @@ body {
     }
 
     .footer-center, .footer-links {
-        position: static; /* Zrušenie absolútnej pozície */
+        position: static; 
         transform: none;
     }
     
