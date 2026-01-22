@@ -19,8 +19,8 @@ body {
 /* MAIN INDEX*/
 
 .logo img {
-    height: 200px; 
-    width: auto;   
+    height: 200px;
+    width: auto;
     margin-left: 30px;
 }
 
@@ -497,7 +497,7 @@ body {
 }
 
 .team-header {
-    background-color: #003344; 
+    background-color: #003344;
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 30px;
@@ -654,7 +654,7 @@ body {
 
 .footer-links {
     position: absolute;
-    right: 30px; 
+    right: 30px;
     display: flex;
     gap: 20px;
 }
@@ -677,9 +677,9 @@ body {
         gap: 20px;
         padding: 20px;
     }
-    
+
     .sidebar {
-        width: 200px; 
+        width: 200px;
     }
 }
 
@@ -690,7 +690,7 @@ body {
 
     /* HEADER & NAVIGÁCIA */
     .header {
-        height: auto; 
+        height: auto;
         flex-direction: column;
         padding: 15px 0;
     }
@@ -700,7 +700,7 @@ body {
     }
 
     .logo img {
-        height: 70px; 
+        height: 70px;
         margin-left: 0;
     }
 
@@ -710,30 +710,32 @@ body {
         justify-content: center;
         height: auto;
         gap: 8px;
-        flex-wrap: wrap; /* Aby sa menu nezalomilo škaredo */
+        flex-wrap: wrap;
+        /* Aby sa menu nezalomilo škaredo */
     }
 
     .nav-item {
-        height: 45px; 
+        height: 45px;
         padding: 8px 12px;
         font-size: 15px;
     }
 
     /* HLAVNÝ LAYOUT */
     .content {
-        flex-direction: column; 
+        flex-direction: column;
         padding: 10px;
         gap: 15px;
     }
 
     .sidebar {
-        width: 100%; 
+        width: 100%;
         margin-bottom: 10px;
     }
-    
+
     .league-list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Lepšie ako flex-wrap */
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        /* Lepšie ako flex-wrap */
         gap: 8px;
     }
 
@@ -744,7 +746,7 @@ body {
 
     /* ZÁPASY */
     .match-row {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
         gap: 8px;
         padding: 10px;
@@ -764,18 +766,24 @@ body {
     }
 
     /* --- TABUĽKY - KĽÚČOVÁ OPRAVA --- */
-    .tab-panel, .league-section, .main-container {
-        overflow-x: auto; 
+    .tab-panel,
+    .league-section,
+    .main-container {
+        overflow-x: auto;
         width: 100%;
-        -webkit-overflow-scrolling: touch; /* Hladký scroll na iPhone */
-    }
-    
-    .league-table {
-        min-width: 550px; /* Toto udrží stĺpce čitateľné, zvyšok sa odscrolluje */
-        display: table; /* Zabezpečí, že sa správa ako tabuľka aj pri scrollovaní */
+        -webkit-overflow-scrolling: touch;
+        /* Hladký scroll na iPhone */
     }
 
-    .league-table th, .league-table td {
+    .league-table {
+        min-width: 550px;
+        /* Toto udrží stĺpce čitateľné, zvyšok sa odscrolluje */
+        display: table;
+        /* Zabezpečí, že sa správa ako tabuľka aj pri scrollovaní */
+    }
+
+    .league-table th,
+    .league-table td {
         padding: 8px 5px;
         font-size: 14px;
     }
@@ -783,36 +791,41 @@ body {
     /* Úprava šírok stĺpcov pre mobil, aby sa ušetril priestor */
     .league-table th:nth-child(2),
     .league-table td:nth-child(2) {
-        width: auto; /* Meno tímu sa prispôsobí */
+        width: auto;
+        /* Meno tímu sa prispôsobí */
         white-space: nowrap;
     }
 
     /* --- SÚPISKA HRÁČOV - OPRAVA GRIDU --- */
     .player-row {
-        grid-template-columns: 35px 1fr 60px; /* Zredukované na 3 stĺpce pre prehľadnosť */
+        grid-template-columns: 35px 1fr 60px;
+        /* Zredukované na 3 stĺpce pre prehľadnosť */
         gap: 5px;
         padding: 12px;
         position: relative;
     }
-    
+
     .player-name {
         font-size: 15px;
         grid-column: 2;
     }
 
     .player-position {
-        grid-column: 2; /* Pozícia pod menom */
+        grid-column: 2;
+        /* Pozícia pod menom */
         font-size: 0.8em;
         margin-top: -2px;
     }
-    
+
     .player-country {
         grid-column: 3;
-        grid-row: 1 / 3; /* Krajina vycentrovaná vertikálne cez oba riadky */
+        grid-row: 1 / 3;
+        /* Krajina vycentrovaná vertikálne cez oba riadky */
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        position: static; /* Zrušené absolute, aby to nerozbíjalo layout */
+        position: static;
+        /* Zrušené absolute, aby to nerozbíjalo layout */
         font-size: 12px;
     }
 
@@ -836,61 +849,73 @@ body {
         height: 60px;
     }
 
-    
+
     /* --- MODAL KOMPLETNÁ OPRAVA --- */
     .modal {
-        padding: 10px; /* Menší padding okolo, aby bolo viac miesta pre obsah */
+        padding: 10px;
+        /* Menší padding okolo, aby bolo viac miesta pre obsah */
     }
 
     .modal-content {
         width: 100%;
-        max-width: 100%; /* Na mobile využijeme celú šírku */
+        max-width: 100%;
+        /* Na mobile využijeme celú šírku */
         padding: 15px;
         border-radius: 10px;
-        max-height: 95vh; /* Aby modal nezmizol pod okrajom obrazovky */
+        max-height: 95vh;
+        /* Aby modal nezmizol pod okrajom obrazovky */
         overflow-y: auto;
     }
 
     .modal-header {
-        flex-direction: column; /* Nadpis a kolo pod sebou */
+        flex-direction: column;
+        /* Nadpis a kolo pod sebou */
         gap: 5px;
         margin-bottom: 15px;
     }
 
     .round-info {
-        margin-right: 0; /* Zrušíme posun vpravo */
+        margin-right: 0;
+        /* Zrušíme posun vpravo */
         font-size: 0.8rem;
     }
 
     .modal-teams {
-        flex-direction: row; /* Tímy stále vedľa seba */
+        flex-direction: row;
+        /* Tímy stále vedľa seba */
         justify-content: space-around;
         gap: 5px;
         margin-bottom: 15px;
     }
 
     .team-logo-large {
-        width: 50px; /* Menšie logá na mobile */
+        width: 50px;
+        /* Menšie logá na mobile */
         height: 50px;
     }
 
     .team-bg-white {
-        padding: 8px; /* Menší biely štvorec okolo loga */
+        padding: 8px;
+        /* Menší biely štvorec okolo loga */
     }
 
     .team span {
-        font-size: 0.9rem; /* Menšie názvy tímov v modale */
+        font-size: 0.9rem;
+        /* Menšie názvy tímov v modale */
         text-align: center;
     }
 
     .vs {
-        font-size: 24px; /* Výrazne zmenšené "VS" */
-        margin-bottom: 20px; /* Zmenšený margin z 50px */
+        font-size: 24px;
+        /* Výrazne zmenšené "VS" */
+        margin-bottom: 20px;
+        /* Zmenšený margin z 50px */
         align-self: center;
     }
 
     .match-details {
-        flex-direction: column; /* Detaily ako štadión a čas pod sebou */
+        flex-direction: column;
+        /* Detaily ako štadión a čas pod sebou */
         gap: 8px;
         font-size: 0.8rem;
         border-top: 1px solid #333;
@@ -906,13 +931,64 @@ body {
         text-align: center;
     }
 
-    .footer-center, .footer-links {
-        position: static; 
+    .footer-center,
+    .footer-links {
+        position: static;
         transform: none;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #1f2937;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #fff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background: #3b82f6;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #2563eb;
 }

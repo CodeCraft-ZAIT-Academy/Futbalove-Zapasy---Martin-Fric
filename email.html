@@ -27,13 +27,21 @@
 
         <!-- MAIN -->
         <main class="main-container">
-            <h1>Kontaktné informácie</h1>
-
-            <div class="contact-info">
-                <p style="font-size: 20px;"><strong>Email:</strong> <a >kontakt@livearena.sk</a></p>
-                <p style="font-size: 20px;"><strong>Telefón:</strong> +421 912 345 678</p>
-                <p style="font-size: 20px;"><strong>Adresa:</strong> Štúrova 123, 811 05 Bratislava</p>
-            </div>
+            
+            <form class="contact-form" action="mailto:martinfric179@gmail.com" method="post" enctype="text/plain">
+                <h2>Kontaktuj nás</h2>
+              
+                <label for="name">Meno</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="message">Správa</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              
+                <button type="submit">Odoslať</button>
+              </form>
 
         </main>
     </div>
